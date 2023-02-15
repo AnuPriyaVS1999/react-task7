@@ -11,22 +11,41 @@ export default function NavHeader() {
         <RightSide>
             <Heading>Table 5</Heading>
             <SubHeading>Leslie k</SubHeading>
-
-
-
             
-            
-
+            <Image src={require("../../Asset/images/Edit.svg").default} alt="image"/>
         </RightSide>
 
     </HeaderContainer>
     
   )
 }
-const HeaderContainer=styled.div``;
-const LeftSide=styled.div``;
-const ButtonTag=styled.button``;
-    const RightSide=styled.div``;
-    const Heading=styled.img``;
-    const SubHeading=styled.div``;
+
+const HeaderContainer=styled.div`
+display:flex;
+
+justify-content: space-between;
+
+width:18%;
+`;
+const LeftSide=styled.div`
+display: flex;
+// flex-direction: column;
+justify-content: space-between;
+// height: 750px;`;
+const ButtonTag=styled.div`
+
+
+
+`;
+
     
+const RightSide=styled.div``;
+const Heading=styled.div``;
+const SubHeading=styled.div``;
+const Image=styled.img`
+margin-right:40%
+margin:0 
+`;
+
+
+
