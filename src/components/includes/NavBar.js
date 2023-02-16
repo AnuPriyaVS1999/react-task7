@@ -57,23 +57,33 @@ import styled from "styled-components";
     )
  }
     const MainContainer=styled.div`
+    background-color:#2D2D2D;
     `;
     const Header=styled.div`
         display:flex;
         justify-content: space-between;
+        
+        
 `;
     const LogoContainer=styled.div``;
-    const LogoImage=styled.img``;
+    const LogoImage=styled.img`
+        display:flex;
+        width:70%;
+        margin:0 auto;
+        padding-top:15px;
+        display:inline-block;
+    `;
     const LeftSide=styled.div`
-display: flex;
-// flex-direction: column;
-justify-content: space-between;
-// height: 750px;`;
+        display: flex;
+     // flex-direction: column;
+        justify-content: space-between;
+     // height: 750px;`;
 const ButtonTag=styled.form`
         height: 30px;
-        width: 300px;
+        width: 280px;
         background: #888;
         position: relative;
+       
         &::before{
             content: url(${require("../../Asset/images/search.svg").default});
             position: absolute;
@@ -86,17 +96,32 @@ const ButtonTag=styled.form`
 const TextInput=styled.input`
  background: none;
  border: none;
+ margin-left: 30px;
+ 
+ 
 `;
-const RightSideLeft=styled.div``;
-const Heading=styled.div``;
-const SubHeading=styled.div``;
+const RightSideLeft=styled.div`
+width;10px;`;
+const Heading=styled.h1`
+font-size:20px;
+margin-bottom:20px;
+color:#fff;
+`;
+const SubHeading=styled.h2`
+color:#fff;
+margin-top:-11px;
+font-size:15px
+`;
 const RightSideRight=styled.div``;
 const Image=styled.img`
-margin-right:40%
-margin:0 
+
+width:100%;
+    display:flex;
+    margin-right: 37px;
 `;
       
-    const LeftContainer=styled.div``;
+    const LeftContainer=styled.div`
+    `;
     const MenuContainer=styled.div``;
     const ListItemsLink=styled.div``;
     const MiddleContainer=styled.div``;
@@ -104,6 +129,4 @@ margin:0
     const ItemLetter=styled.div``;
     const Name=styled.div``;
     const BottomContainer=styled.div``;
-    
-
     
