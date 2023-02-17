@@ -34,22 +34,22 @@ import styled from "styled-components";
                     <ListItemsLink>Accounting</ListItemsLink>
                 </MenuContainer>
                 <MiddleContainer>
-                    <Item>
-                        <ItemLetter>L</ItemLetter>
+                    <User>
+                        <Letter>L</Letter>
                         <Name>Lesliya K</Name>
-                    </Item>
-                    <Item>
-                        <ItemLetter>C</ItemLetter>
+                    </User>
+                    <User>
+                        <Letter className="two">C</Letter>
                         <Name>Camaron w.</Name>
-                    </Item>
-                    <Item>
-                        <ItemLetter>J</ItemLetter>
+                    </User>
+                    <User>
+                        <Letter className="three">J</Letter>
                         <Name>Jacob j.</Name>
-                    </Item>
+                    </User>
                 </MiddleContainer>
                 <BottomContainer>
-                        <ItemLetter>c</ItemLetter>
-                        <Name>2022C0syPOS App</Name>
+                        <YearLetter>c</YearLetter>
+                        <AppYear>2022C0syPOS App</AppYear>
                     
                 </BottomContainer>
             </LeftContainer>
@@ -189,25 +189,52 @@ const Image=styled.img`
     
   `;
     const MiddleContainer=styled.div`
-    // height: 340px;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
-    // align-items: center;
-    // padding-bottom: 15px;
-    color:#fff;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
     `;
-    const Item=styled.div`
-    margin-bottom:15px;
-    border-radius:20px;
+    const User=styled.div`
+    margin-bottom: 15px;
+    border-radius: 20px;
+    background: #2D2D2D;
     padding: 6px;
+    border: 1px solid #a6a6a6;
+    display: flex;
+    align-items:center;
+    // width: fit-content;
+     
+      
     
    `;
-    const ItemLetter=styled.div`
-    
+    const Letter=styled.div`
+    color:#fff;
+    padding: 5px 12px;
+    background: #E4CDEE;
+    border-radius: 50%;
+    font-weight: 500;
+    margin-right: 12px;
+    &.two {
+    background: #C3E9DE;
+    };
+    &.three {
+        background: #FAC2D9;
+    };
     `;
     const Name=styled.div`
+    font-size: 14px;
+    color:#fff;
    
     `;
     const BottomContainer=styled.div``;
+    const YearLetter=styled.div`
+    font-size: 10px;
+    font-weight: 800;
+    border-radius: 25px;
+    padding: 3px 8px;`;
+    const AppYear=styled.div``;
+
     
+ 
