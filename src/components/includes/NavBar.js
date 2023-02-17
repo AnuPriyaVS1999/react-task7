@@ -26,13 +26,13 @@ import styled from "styled-components";
             </Header>
         
             <LeftContainer>
-                <MenuContainer>
+                <ListContainer>
                     <ListItemsLink>Reservation</ListItemsLink>
                     <ListItemsLink>Table Services</ListItemsLink>
                     <ListItemsLink>Menu</ListItemsLink>
                     <ListItemsLink>Delivery</ListItemsLink>
                     <ListItemsLink>Accounting</ListItemsLink>
-                </MenuContainer>
+                </ListContainer>
                 <MiddleContainer>
                     <User>
                         <Letter>L</Letter>
@@ -53,13 +53,51 @@ import styled from "styled-components";
                     
                 </BottomContainer>
             </LeftContainer>
+            <RightContainer>
+                <MenuContainer>
+                        
+                            <ListItems>
+                                <Span>1</Span>
+                                <Item>Roast chicken x2 </Item>
+                                <Number>$25.50</Number>
+
+                            </ListItems>
+                        
+                        
+                            <ListItems>
+                                <Span>2</Span>
+                                <Item>Red caviar x3 </Item>
+                                <Number>$36.50</Number>
+
+                            </ListItems>
+                       
+                        
+                            <ListItems>
+                                <Span>4</Span>
+                                <Item>German sausage x1 </Item>
+                                <Number>$25.50</Number>
+
+                            </ListItems>
+                       
+                            <ListItems>
+                                <Span>4</Span>
+                                <Item>Irish cream coffeex1 </Item>
+                                <Number>$4.50</Number>
+
+                            </ListItems>
+                        
+                </MenuContainer>
+
+            </RightContainer>
+
  
     </MainContainer>
 
     )
  }
     const MainContainer=styled.div`
-    // background-color:#2d2d2d;
+    position:relative;
+    
     `;
     const Header=styled.div`
         display:flex;
@@ -80,13 +118,12 @@ import styled from "styled-components";
     `;
     const LeftSide=styled.div`
         display: flex;
-     // flex-direction: column;
+    
         justify-content: space-between;
     `;
-const ButtonTag=styled.form`
+    const ButtonTag=styled.form`
         height: 40px;
         width: 280px;
-        // top:16px;
         background: #2d2d2d;
         position: relative;
         margin-left:-415px;
@@ -99,102 +136,93 @@ const ButtonTag=styled.form`
             left:10px;
             bottom: 0;
             filter:invert(1);
-            // left: 10px;
             display:block;
             
         }
 `;  
-const TextInput=styled.input`
- background: none;
- border: none;
- margin-top:10px;
+    const TextInput=styled.input`
+        background: none;
+        border: none;
+        margin-top:10px;
 
  
 `;
-const SectionRight=styled.div`
-width:40%;
-display:flex;
-justify-content:space-between;
-align-items:center;
+    const SectionRight=styled.div`
+        width:40%;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
 `;
-const RightSideLeft=styled.div`
-width:10%;
- margin-left:350px;
+    const RightSideLeft=styled.div`
+        width:10%;
+        margin-left:350px;
 `;
-const Heading=styled.h1`
-  font-size:20px;
-  margin-bottom:20px;
-  color:#fff;
+    const Heading=styled.h1`
+        font-size:20px;
+        margin-bottom:20px;
+        color:#fff;
 
 `;
-const SubHeading=styled.h2`
-   color:#fff;
-   margin-top:-11px;
-   font-size:15px
+    const SubHeading=styled.h2`
+       color:#fff;
+       margin-top:-11px;
+       font-size:15px
 `;
-const RightSideRight=styled.div`
-width: 60px;
-height: 60px;
-border-radius: 45px;
-background: #fff;
-display: flex;
-justify-content:center;
-align-items: center;
-margin-right:50px;
+    const RightSideRight=styled.div`
+       width: 60px;
+      height: 60px;
+      border-radius: 45px;
+      background: #fff;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      margin-right:50px;
 
 `;
 const Image=styled.img`
 
-   width:55%;
-    display:block;
+     width:55%;
+     display:block;
 `;
       
     const LeftContainer=styled.div`
-    margin-top: 0px;
-    width: 12%;
-    background: #000;
+
+     margin-top: 0px;
+     width: 12%;
+     background: #000;
+     height:100vh;
     `;
 
-    const MenuContainer=styled.div`
-    width: 100%;
+    const ListContainer=styled.div`
+
     color: #a6a6a6;
     position: relative;
-    cursor: pointer;
+    
   ::before {
-    content: "";
+
     position: absolute;
     top: -6px;
     left: 6px;
-    height: 40px;
-    width: 170px;
-    border-radius: 8px;
     background: #2d2d2d;
-    opacity: 0;
-    z-index: -1;
-    cursor: pointer;
-}
-:hover {
-  color: #fff;
-}
-:hover::before {
-  opacity: 0.7;
-  transition: opacity 0.2s ease-out;
+    
+    
 }
     `;  
     const ListItemsLink=styled.div`
     color: #a6a6a6;
     font-size: 15px;
+    
     margin-left: 20px;
     padding: 15px;
     
   `;
     const MiddleContainer=styled.div`
-    height: 340px;
+    width:80%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 15px;
+    justify-content: center;
+    align-items: left;
+    margin-top: 200px;
     `;
     const User=styled.div`
     margin-bottom: 15px;
@@ -202,11 +230,10 @@ const Image=styled.img`
     background: #2D2D2D;
     padding: 6px;
     border: 1px solid #a6a6a6;
-    display: flex;
+    display:flex;
     align-items:center;
-    // width: fit-content;
-     
-      
+    margin-left: 20px;
+    
     
    `;
     const Letter=styled.div`
@@ -220,7 +247,7 @@ const Image=styled.img`
     background: #C3E9DE;
     };
     &.three {
-        background: #FAC2D9;
+      background: #FAC2D9;
     };
     `;
     const Name=styled.div`
@@ -228,13 +255,45 @@ const Image=styled.img`
     color:#fff;
    
     `;
-    const BottomContainer=styled.div``;
+    const BottomContainer=styled.div`
+    display:flex;
+    justify-content:space-between;
+    padding-top:20px;
+    padding-left:10px;
+    
+    `;
     const YearLetter=styled.div`
     font-size: 10px;
-    font-weight: 800;
+    font-weight: 800px;
+    background: #c6b1e1;
+    color: #000;
     border-radius: 25px;
-    padding: 3px 8px;`;
-    const AppYear=styled.div``;
-
+    padding: 3px 8px;
+   `;
+    
+    const AppYear=styled.div`
+    color:#fff;
+    // font-size:10px;
+  
+    `;
+const RightContainer=styled.div`
+     background: #2D2D2D;
+     position:absolute;
+     top:100px;
+     right:0;
+     height:100vh;
+     width:21%;
+     
+    `;
+const MenuContainer=styled.div`
+    display:flex;
+    justify-content:space-between;
+    `;
+const ListItems=styled.div`
+    flex-direction: column;
+     `;
+const Span=styled.span``;
+const Item=styled.div``;
+const Number=styled.div``;
     
  
