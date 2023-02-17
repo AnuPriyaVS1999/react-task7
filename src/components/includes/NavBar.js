@@ -62,6 +62,7 @@ import styled from "styled-components";
     const Header=styled.div`
         display:flex;
         justify-content: space-between;
+        padding:20px;
         
         
 `;
@@ -79,54 +80,120 @@ import styled from "styled-components";
         justify-content: space-between;
      // height: 750px;`;
 const ButtonTag=styled.form`
-        height: 30px;
+        height: 33px;
         width: 280px;
+        top:16px;
         background: #888;
         position: relative;
+        left:-361px;
        
         &::before{
             content: url(${require("../../Asset/images/search.svg").default});
             position: absolute;
-            top: 0;
+            top: 3px;
             bottom: 0;
             left: 10px;
             display:block;
+            
         }
 `;  
 const TextInput=styled.input`
  background: none;
  border: none;
- margin-left: 30px;
+ margin-left: 40px;
+
  
  
 `;
 const RightSideLeft=styled.div`
 width;10px;`;
 const Heading=styled.h1`
-font-size:20px;
-margin-bottom:20px;
-color:#fff;
+  font-size:20px;
+  margin-bottom:20px;
+  color:#fff;
+
 `;
 const SubHeading=styled.h2`
-color:#fff;
-margin-top:-11px;
-font-size:15px
+   color:#fff;
+   margin-top:-11px;
+   font-size:15px
 `;
 const RightSideRight=styled.div``;
 const Image=styled.img`
 
-width:100%;
+   width:100%;
     display:flex;
     margin-right: 37px;
 `;
       
     const LeftContainer=styled.div`
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-between;
+    align-items: center;
     `;
-    const MenuContainer=styled.div``;
-    const ListItemsLink=styled.div``;
-    const MiddleContainer=styled.div``;
-    const Item=styled.div``;
-    const ItemLetter=styled.div``;
-    const Name=styled.div``;
+    const MenuContainer=styled.div`
+    width: 100%;
+    color: #a6a6a6;
+    position: relative;
+    cursor: pointer;
+  ::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 6px;
+    height: 40px;
+    width: 170px;
+    border-radius: 8px;
+    background: #2d2d2d;
+    opacity: 0;
+    z-index: -1;
+    cursor: pointer;
+}
+:hover {
+  color: #fff;
+}
+:hover::before {
+  opacity: 0.7;
+  transition: opacity 0.2s ease-out;
+}
+    `;  
+    const ListItemsLink=styled.div`
+    color: #a6a6a6;
+    font-size: 15px;
+    margin-left: 20px;
+    padding: 15px;
+    
+  `;
+    const MiddleContainer=styled.div`
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;`;
+    const Item=styled.div`
+    height: 50%;
+    margin: auto 0;`;
+    const ItemLetter=styled.div`
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 6px;
+    border: 1px solid #a6a6a6;
+    width: fit-content;
+    cursor: pointer;
+    &:hover {
+    background: #8e8e8e4a;
+    padding: 5px 12px;
+    border-radius: 50%;
+    background: var(--card-2);
+    color: #000;
+    font-weight: 500;
+    margin-right: 12px;`;
+    const Name=styled.div`
+    font-size: 14px;
+    `;
     const BottomContainer=styled.div``;
     
