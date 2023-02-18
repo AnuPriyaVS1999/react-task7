@@ -106,19 +106,21 @@ import styled from "styled-components";
                     
                         <BottomItem>
                             <MainTitle>PaymentMethod</MainTitle>
-                            <PaymentMethodS>
-                                <PaymentOption>
-                                    <Method className="one">Cash</Method>
-                                        <Cash src={require("../Asset/images/dollar.svg").default} />
-                                    <Method className="two">Debit Card tCard</Method>
-                                         <DebitCard src={require("../Asset/images/credit.svg").default} />
-                                    <Method className="three">E-wallet</Method>
-                                          <Wallet src={require("../Asset/images/scan.svg").default}  />
-                                </PaymentOption>
-                                <ButtonTag>
-                                    <TextInput type="text" placeholder="Place Order" />
-                                </ButtonTag>
-                            </PaymentMethodS>
+                            
+                              <PaymentOption>
+                                 <Method>
+                                     <Method className="one">Cash</Method>
+                                        <Cash src={require("../../Asset/images/Dollar.svg").default} />
+                                     <Method className="two">Debit Card tCard</Method>
+                                         <DebitCard src={require("../../Asset/images/Credit.svg").default} />
+                                     <Method className="three">E-wallet</Method>
+                                        <Wallet src={require("../../Asset/images/Scan.svg").default}  />
+                                 </Method>
+                              </PaymentOption>
+                                    <Button>
+                                        <TextInput type="text" placeholder="Place Order" />
+                                    </Button>
+                            
                         </BottomItem>
                     </TotalContainer>
 
@@ -133,6 +135,7 @@ import styled from "styled-components";
  }
     const MainContainer=styled.div`
     position:relative;
+    background-color:#000;
     
     `;
     const Header=styled.div`
@@ -332,17 +335,18 @@ const MenuContainer=styled.div`
 const ListItems=styled.div`
      width:90%;
      height:40%; 
-    background:linear-gradient(to bottom-right, rgba(45, 45, 45, 100%)  rgba(45, 45, 45, 70%);
-    // margin-left:10px;
+    
+    margin-left:10px;
     border-radius:10px;
     margin-top:10px;
     
     display:flex;
     justify-content:space-between;
     align-items:center `;
+    
 const Span=styled.span`
-    // margin-top:20px;
-    // margin-right: -57px;
+    margin-top:20px;
+    margin-right: -57px;
     padding:15px;
     border-radius:8px;
     background:#000;
@@ -354,13 +358,26 @@ const Item=styled.h4`
 font-size:15px;
 `;
 const Number=styled.div``;
-const TotalContainer = styled.div``;
+const TotalContainer = styled.div`
+background-color:#67636f;
+
+width:100%;
+height :60vh;`;
  
-const TopSection = styled.div``;
+const TopSection = styled.div`
+display:flex;
+justifying-content:space-between;
+width: 70%;`;
+
  
-const SubTotal= styled.div``;
-const SubTitle=styled.div``;
-const SubPrice=styled.div``;
+const SubTotal= styled.div`
+  
+`;
+const SubTitle=styled.div`
+margin-right:10px`;
+const SubPrice=styled.div`
+
+`;
 const Tax=styled.div``;
 const TaxTitle=styled.div``;
 const TaxPrice=styled.div``;
@@ -369,13 +386,12 @@ const  TotalTitle=styled.div``;
 const TotalPrice=styled.div``;
 const BottomItem= styled.div``;
 const MainTitle=styled.div``;
-const PaymentMethod=styled.div``;
-const PaymentOption.div``;
-const =styled.div``;
-const TaxPrice=styled.div``;
-const  Total=styled.div``;
-const  TotalTitle=styled.div``;
-const TotalPrice=styled.div``;
+const PaymentOption=styled.div``;
+const Method=styled.div``;
+const Cash=styled.div``;
+const DebitCard=styled.div``;
+const Wallet=styled.div``;
+const Button=styled.div``;
 
 
   
