@@ -64,22 +64,22 @@ import styled from "styled-components";
                             </ListItems>
                         
                         
-                            <ListItems>
-                                <Span>2</Span>
+                            <ListItems className="two">
+                                <Span >2</Span>
                                 <Item>Red caviar x3 </Item>
                                 <Number>$36.50</Number>
 
                             </ListItems>
                        
                         
-                            <ListItems>
-                                <Span>4</Span>
+                            <ListItems className="three">
+                                <Span>3</Span>
                                 <Item>German sausage x1 </Item>
                                 <Number>$25.50</Number>
 
                             </ListItems>
                        
-                            <ListItems>
+                            <ListItems className="four">
                                 <Span>4</Span>
                                 <Item>Irish cream coffeex1 </Item>
                                 <Number>$4.50</Number>
@@ -169,14 +169,14 @@ import styled from "styled-components";
        font-size:15px
 `;
     const RightSideRight=styled.div`
-       width: 60px;
-      height: 60px;
+       width: 33px;
+      height: 34px;
       border-radius: 45px;
       background: #fff;
       display: flex;
       justify-content:center;
       align-items: center;
-      margin-right:50px;
+      margin-right:44px;
 
 `;
 const Image=styled.img`
@@ -287,13 +287,36 @@ const RightContainer=styled.div`
     `;
 const MenuContainer=styled.div`
     display:flex;
-    justify-content:space-between;
+    flex-wrap:wrap;
+    justify-content: center;
+    // width:40%;
+    // height:30%;
+    
     `;
 const ListItems=styled.div`
-    flex-direction: column;
-     `;
-const Span=styled.span``;
-const Item=styled.div``;
+     width:90%;
+     height:40%; 
+    background:linear-gradient(to bottom-right, rgba(45, 45, 45, 100%)  rgba(45, 45, 45, 70%);
+    // margin-left:10px;
+    border-radius:10px;
+    margin-top:10px;
+    
+    display:flex;
+    justify-content:space-between;
+    align-items:center `;
+const Span=styled.span`
+    // margin-top:20px;
+    // margin-right: -57px;
+    padding:15px;
+    border-radius:8px;
+    background:#000;
+    width:20%
+    height:15px;
+
+`;
+const Item=styled.h4`
+font-size:15px;
+`;
 const Number=styled.div``;
     
  
