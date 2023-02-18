@@ -87,11 +87,47 @@ import styled from "styled-components";
                             </ListItems>
                         
                 </MenuContainer>
+                    <TotalContainer>
+                        <TopSection>
+                            <SubTotal>
+                                <SubTitle>Subtotal</SubTitle>
+                                <SubPrice>$171.50</SubPrice>
+                            </SubTotal>
+                            <Tax>
+                                <TaxTitle>Tax 10%</TaxTitle>
+                                <TaxPrice>$17.15</TaxPrice>
+                           </Tax>
+                           
+                            <Total>
+                               <TotalTitle>Total</TotalTitle>
+                               <TotalPrice>$188.65</TotalPrice>
+                            </Total>
+                        </TopSection>
+                    
+                        <BottomItem>
+                            <MainTitle>PaymentMethod</MainTitle>
+                            <PaymentMethodS>
+                                <PaymentOption>
+                                    <Method className="one">Cash</Method>
+                                        <Cash src={require("../Asset/images/dollar.svg").default} />
+                                    <Method className="two">Debit Card tCard</Method>
+                                         <DebitCard src={require("../Asset/images/credit.svg").default} />
+                                    <Method className="three">E-wallet</Method>
+                                          <Wallet src={require("../Asset/images/scan.svg").default}  />
+                                </PaymentOption>
+                                <ButtonTag>
+                                    <TextInput type="text" placeholder="Place Order" />
+                                </ButtonTag>
+                            </PaymentMethodS>
+                        </BottomItem>
+                    </TotalContainer>
 
+                   
+                  
             </RightContainer>
 
  
-    </MainContainer>
+       </MainContainer>
 
     )
  }
@@ -318,5 +354,28 @@ const Item=styled.h4`
 font-size:15px;
 `;
 const Number=styled.div``;
-    
+const TotalContainer = styled.div``;
  
+const TopSection = styled.div``;
+ 
+const SubTotal= styled.div``;
+const SubTitle=styled.div``;
+const SubPrice=styled.div``;
+const Tax=styled.div``;
+const TaxTitle=styled.div``;
+const TaxPrice=styled.div``;
+const  Total=styled.div``;
+const  TotalTitle=styled.div``;
+const TotalPrice=styled.div``;
+const BottomItem= styled.div``;
+const MainTitle=styled.div``;
+const PaymentMethod=styled.div``;
+const PaymentOption.div``;
+const =styled.div``;
+const TaxPrice=styled.div``;
+const  Total=styled.div``;
+const  TotalTitle=styled.div``;
+const TotalPrice=styled.div``;
+
+
+  
