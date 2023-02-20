@@ -97,6 +97,7 @@ import styled from "styled-components";
                                 <TaxTitle>Tax 10%</TaxTitle>
                                 <TaxPrice>$17.15</TaxPrice>
                            </Tax>
+                           <Line />
                            
                             <Total>
                                <TotalTitle>Total</TotalTitle>
@@ -108,14 +109,14 @@ import styled from "styled-components";
                             <MainTitle>PaymentMethod</MainTitle>
                             
                               <PaymentOption>
-                                 <Method>
-                                     <Method className="one">Cash</Method>
-                                        <Cash src={require("../../Asset/images/Dollar.svg").default} />
-                                     <Method className="two">Debit Card tCard</Method>
+                                 <Methods>
+                                     <Method><Method className="one">Cash</Method>
+                                        <Cash src={require("../../Asset/images/Dollar.svg").default} /></Method>
+                                     <Method className="two">DebitCard</Method>
                                          <DebitCard src={require("../../Asset/images/Credit.svg").default} />
                                      <Method className="three">E-wallet</Method>
                                         <Wallet src={require("../../Asset/images/Scan.svg").default}  />
-                                 </Method>
+                                 </Methods>
                               </PaymentOption>
                                     <Button>
                                         <TextInput type="text" placeholder="Place Order" />
@@ -123,19 +124,297 @@ import styled from "styled-components";
                             
                         </BottomItem>
                     </TotalContainer>
-
-                   
-                  
             </RightContainer>
+                    <MiddleSection>
+                        <TopContainerone>
+                            <ImageSection>
+                                <Image1 src={require("../../Asset/images/Break-Fast.svg").default} alt="image"/>
+                            </ImageSection>
+                            <Content>
+                                <Title>Break fast</Title>
+                                
+                                <Number>13 items</Number>
+                            </Content>    
+                        </TopContainerone>
+                        <TopContainertwo>
+                            <ImageSection>
+                                <Image src={require("../../Asset/images/soup.svg").default} alt="image"/>
 
+                            </ImageSection>
+                            <Content>
+                                <Title>soups</Title>
+                                <Number>13 items</Number>
+                            </Content>
+                            
+                                
+                                
+                            
+                        </TopContainertwo>
+                        <TopContainerthree>
+                            <ImageSection>
+                                <Image src={require("../../Asset/images/pasta.svg").default} alt="image"/>
+
+                            </ImageSection>
+                            <Content>
+                                <Title>pasta</Title>
+                                <Number>13 items</Number>
+                            </Content>
+                            
+                                
+                                
+                            
+                        </TopContainerthree>
+                        <TopContainerfour>
+                            <ImageSection>
+                                <Image src={require("../../Asset/images/Sushi.svg").default} alt="image"/>
+
+                            </ImageSection>
+                            <Content>
+                                <Title>sushi</Title>
+                                <Number>13 items</Number>
+                            </Content>
+                            
+                                
+                                
+                            
+                        </TopContainerfour>
+                        <TopContainerfive>
+                            <ImageSection>
+                                <Image src={require("../../Asset/images/Main-Course.svg").default} alt="image"/>
+
+                            </ImageSection>
+                            <Content>
+                                <Title>Main course</Title>
+                                <Number>13 items</Number>
+                            </Content>
+                            
+                                
+                                
+                            
+                        </TopContainerfive>
+                        <TopContainersix>
+                            <ImageSection>
+                                <Image src={require("../../Asset/images/Desserts.svg").default} alt="image"/>
+
+                            </ImageSection>
+                            <Content>
+                                <Title>Desserts</Title>
+                                <Number>13 items</Number>
+                            </Content>
+                      
+                        </TopContainersix>
+
+                     
+                         <TopContainersvn>
+                            <ImageSection>
+                                <Image src={require("../../Asset/images/Drinks.svg").default} alt="image"/>
+                            </ImageSection>
+                            <Content>
+                                <Title>Drinks</Title>
+                                <Number>13 items</Number>
+                            </Content>
+                            
+                                
+                                
+                            
+                        </TopContainersvn>
+                        <TopContaineregt>
+                            <ImageSection>
+                                <Image src={require("../../Asset/images/Alcohol.svg").default} alt="image"/>
+
+                            </ImageSection>
+                            <Content>
+                                <Title>Alcohol</Title>
+                                <Number>13 items</Number>
+                            </Content>
+                          
+                        </TopContaineregt>
+                    </MiddleSection>
+                    <SectionBottom>
+                       <ProcessingOrders>
+                           <MainSet>
+                              <H1>Orders</H1>
+                              <Arrow>
+                                <ArrowIcon src={require("../../Asset/images/Arrow.svg").default } />
+                              </Arrow>
+                              <H1>Kitchen</H1>
+                           </MainSet>
+                            <ItemPrice> 
+                               <HeadingTags> Fish and chips</HeadingTags>
+                               <DollerRate>$7.50</DollerRate>
+                           </ItemPrice>
+                           <MainButton>
+                                <IconImage>
+                                    <Minus src={require("../../Asset/images/minus.svg").default } />
+                                    <SubItem>0</SubItem>
+                                    <Plus src={require("../../Asset/images/plus.svg").default } />
+                                </IconImage>
+                           </MainButton>
+                              
+                        </ProcessingOrders>
+                        <ProcessingOrders>
+                           <MainSet>
+                              <H1>Orders</H1>
+                              <Arrow>
+                                <ArrowIcon src={require("../../Asset/images/Arrow.svg").default } />
+                              </Arrow>
+                              <SubTitle>Kitchen</SubTitle>
+                           </MainSet>
+                            <ItemPrice> 
+                               <HeadingTags>Roast Chicken</HeadingTags>
+                               <DollerRate>$7.50</DollerRate>
+                           </ItemPrice>
+                           <MainButton>
+                                <IconImage>
+                                    <Minus src={require("../../Asset/images/minus.svg").default } />
+                                    <SubItem>2</SubItem>
+                                    <Plus src={require("../../Asset/images/plus.svg").default } />
+                                </IconImage>
+                           </MainButton>
+                              
+                        </ProcessingOrders>
+                        <ProcessingOrders>
+                           <MainSet>
+                              <H1>Orders</H1>
+                              <Arrow>
+                                <ArrowIcon src={require("../../Asset/images/Arrow.svg").default } />
+                              </Arrow>
+                              <H1>Kitchen</H1>
+                           </MainSet>
+                            <ItemPrice> 
+                               <HeadingTags>Fillet Steak</HeadingTags>
+                               <DollerRate>$7.50</DollerRate>
+                           </ItemPrice>
+                           <MainButton>
+                                <IconImage>
+                                    <Minus src={require("../../Asset/images/minus.svg").default } />
+                                    <SubItem>0</SubItem>
+                                    <Plus src={require("../../Asset/images/plus.svg").default } />
+                                </IconImage>
+                           </MainButton>
+                              
+                        </ProcessingOrders>
+                        <ProcessingOrders>
+                           <MainSet>
+                              <H1>Orders</H1>
+                              <Arrow>
+                                <ArrowIcon src={require("../../Asset/images/Arrow.svg").default } />
+                              </Arrow>
+                              <H1>Kitchen</H1>
+                           </MainSet>
+                            <ItemPrice> 
+                               <HeadingTags>Beefsteak</HeadingTags>
+                               <DollerRate>$7.50</DollerRate>
+                           </ItemPrice>
+                           <MainButton>
+                                <IconImage>
+                                    <Minus src={require("../../Asset/images/minus.svg").default } />
+                                    <SubItem>0</SubItem>
+                                    <Plus src={require("../../Asset/images/plus.svg").default } />
+                                </IconImage>
+                           </MainButton>
+                              
+                        </ProcessingOrders>
+                        <ProcessingOrders>
+                           <MainSet>
+                              <H1>Orders</H1>
+                              <Arrow>
+                                <ArrowIcon src={require("../../Asset/images/Arrow.svg").default } />
+                              </Arrow>
+                              <H1>Kitchen</H1>
+                           </MainSet>
+                            <ItemPrice> 
+                               <HeadingTags>Roast Beef</HeadingTags>
+                               <DollerRate>$7.50</DollerRate>
+                           </ItemPrice>
+                           <MainButton>
+                                <IconImage>
+                                    <Minus src={require("../../Asset/images/minus.svg").default } />
+                                    <SubItem>0</SubItem>s
+                                    <Plus src={require("../../Asset/images/plus.svg").default } />
+                                </IconImage>
+                           </MainButton>
+                              
+                        </ProcessingOrders>
+                        <ProcessingOrders>
+                           <MainSet>
+                              <H1>Orders</H1>
+                              <Arrow>
+                                <ArrowIcon src={require("../../Asset/images/Arrow.svg").default } />
+                              </Arrow>
+                              <H1>Kitchen</H1>
+                           </MainSet>
+                            <ItemPrice> 
+                               <HeadingTags>BUFFALO Wings</HeadingTags>
+                               <DollerRate>$7.50</DollerRate>
+                           </ItemPrice>
+                           <MainButton>
+                                <IconImage>
+                                    <Minus src={require("../../Asset/images/minus.svg").default } />
+                                    <SubItem>0</SubItem>
+                                    <Plus src={require("../../Asset/images/plus.svg").default } />
+                                </IconImage>
+                           </MainButton>
+                              
+                        </ProcessingOrders>
+                        <ProcessingOrders>
+                           <MainSet>
+                              <H1>Orders</H1>
+                              <Arrow>
+                                <ArrowIcon src={require("../../Asset/images/Arrow.svg").default } />
+                              </Arrow>
+                              <H1>Kitchen</H1>
+                           </MainSet>
+                            <ItemPrice> 
+                               <HeadingTags>Lobster</HeadingTags>
+                               <DollerRate>$7.50</DollerRate>
+                           </ItemPrice>
+                           <MainButton>
+                                <IconImage>
+                                    <Minus src={require("../../Asset/images/minus.svg").default } />
+                                    <SubItem>0</SubItem>
+                                    <Plus src={require("../../Asset/images/plus.svg").default } />
+                                </IconImage>
+                           </MainButton>
+
+                              
+                        </ProcessingOrders>
+                        <ProcessingOrders>
+                           <MainSet>
+                              <H1>Orders</H1>
+                              <Arrow>
+                                <ArrowIcon src={require("../../Asset/images/Arrow.svg").default } />
+                              </Arrow>
+                              <H1>Kitchen</H1>
+                           </MainSet>
+                            <ItemPrice> 
+                               <HeadingTags>Red Cavier</HeadingTags>
+                               <DollerRate>$7.50</DollerRate>
+                           </ItemPrice>
+                           <MainButton>
+                                <IconImage>
+                                    <Minus src={require("../../Asset/images/minus.svg").default } />
+                                    <SubItem>0</SubItem>
+                                    <Plus src={require("../../Asset/images/plus.svg").default } />
+                                </IconImage>
+                           </MainButton>
+                           
+                              
+                        </ProcessingOrders>
+                 
+                    </SectionBottom> 
  
        </MainContainer>
 
     )
  }
-    const MainContainer=styled.div`
+    const MainContainer=styled.div`    
     position:relative;
-    background-color:#000;
+    /* background-color:black; */
+
+    
+    
+   
     
     `;
     const Header=styled.div`
@@ -157,15 +436,16 @@ import styled from "styled-components";
     `;
     const LeftSide=styled.div`
         display: flex;
-    
+        width: 44%;
         justify-content: space-between;
     `;
     const ButtonTag=styled.form`
         height: 40px;
-        width: 280px;
+        width: 300px;
+        left:30px;
         background: #2d2d2d;
         position: relative;
-        margin-left:-415px;
+        
         text-align:center;
        
         &::before{
@@ -193,8 +473,8 @@ import styled from "styled-components";
         align-items:center;
 `;
     const RightSideLeft=styled.div`
-        width:10%;
-        margin-left:350px;
+        width:20%;
+        margin-left:280px;
 `;
     const Heading=styled.h1`
         font-size:20px;
@@ -229,7 +509,7 @@ const Image=styled.img`
      margin-top: 0px;
      width: 12%;
      background: #000;
-     height:100vh;
+    //  height:100vh;
     `;
 
     const ListContainer=styled.div`
@@ -263,7 +543,8 @@ const Image=styled.img`
     align-items: left;
     margin-top: 200px;
     `;
-    const User=styled.div`
+    const User=styled.div`    
+    width: 82%;
     margin-bottom: 15px;
     border-radius: 20px;
     background: #2D2D2D;
@@ -316,13 +597,11 @@ const Image=styled.img`
   
     `;
 const RightContainer=styled.div`
-     background: #2D2D2D;
+     
      position:absolute;
      top:100px;
-     right:0;
-     height:100vh;
-     width:21%;
-     
+     right:45px;
+     width:21%;  
     `;
 const MenuContainer=styled.div`
     display:flex;
@@ -331,67 +610,250 @@ const MenuContainer=styled.div`
     // width:40%;
     // height:30%;
     
+    
     `;
 const ListItems=styled.div`
      width:90%;
      height:40%; 
-    
-    margin-left:10px;
+     background:#2d2d2d;
+    margin:6px auto;
     border-radius:10px;
-    margin-top:10px;
+    padding:0 18px;
     
     display:flex;
     justify-content:space-between;
     align-items:center `;
     
 const Span=styled.span`
-    margin-top:20px;
-    margin-right: -57px;
-    padding:15px;
-    border-radius:8px;
-    background:#000;
-    width:20%
-    height:15px;
-
+    
+    padding: 6px 12px;
+    border-radius: 41px;
+    background:#fff;
+    
 `;
 const Item=styled.h4`
 font-size:15px;
 `;
-const Number=styled.div``;
-const TotalContainer = styled.div`
-background-color:#67636f;
 
-width:100%;
-height :60vh;`;
+const TotalContainer = styled.div`
+border-radius:8px;
+background-color:#2d2d2d;
+margin-top:30px;
+padding:15px;`;
  
 const TopSection = styled.div`
-display:flex;
-justifying-content:space-between;
-width: 70%;`;
+margin-bottom:60px;
+font-weight:`;
 
  
 const SubTotal= styled.div`
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom: 5px;
+font-size:15px;
+
+
   
 `;
 const SubTitle=styled.div`
-margin-right:10px`;
+color:#a6a6a6;
+font-weight:500;
+font-size:17px;
+`;
 const SubPrice=styled.div`
+color:#a6a6a6
+`;
+const Tax=styled.div`
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom: 5px;
+ font-size:19px;
+ 
 
 `;
-const Tax=styled.div``;
-const TaxTitle=styled.div``;
-const TaxPrice=styled.div``;
-const  Total=styled.div``;
-const  TotalTitle=styled.div``;
-const TotalPrice=styled.div``;
+const TaxTitle=styled.div`
+color:#a6a6a6`;
+const TaxPrice=styled.div`
+color:#a6a6a6`;
+const Line = styled.hr`
+border-top: 1px dashed #8e8e8e;
+`;
+const  Total=styled.div`
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom: 5px;
+`;
+const  TotalTitle=styled.div`
+font-weight:normal;
+font-size:22px;
+color:#fff`;
+const TotalPrice=styled.div`
+font-weight:700;
+color:#fff;
+`;
 const BottomItem= styled.div``;
-const MainTitle=styled.div``;
-const PaymentOption=styled.div``;
-const Method=styled.div``;
-const Cash=styled.div``;
-const DebitCard=styled.div``;
-const Wallet=styled.div``;
-const Button=styled.div``;
+const MainTitle=styled.div`
+  font-size: 15px;
+  color: #a6a6a6;
+  margin-bottom: 10px;`;
+const PaymentOption=styled.div`
+  display: flex;
+//   justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 15px;
+  justify-content:space-between;
+  `;
+const Method=styled.div`
+display:flex;
+justify-content:space-between;`;
+const Methods=styled.div`
+display:flex;
+justify-content:space-eventy;
+border:1px solid #000;
+width:90%;
+font-size: 13px;
+
+
+
+`;
+const Cash=styled.img`
+font-size: 13px;
+`;
+const DebitCard=styled.img`
+width: 30%;
+text-align: center;
+`;
+const Wallet=styled.img`
+  padding: 10px 29px;
+ font-size: 13px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  filter: invert(1);
+  cursor: pointer;
+  &:hover {
+    filter: invert(0);
+    background-color: #fff;
+    color: white;
+  }`;
+const Button=styled.div`
+ text-align: center;
+  background: #fff;
+  display: block;
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  `;
+const MiddleSection=styled.div`
+position:absolute;
+top: 83px;
+left: 201px;
+display:flex;
+flex-wrap:wrap;
+width:60%;
+border-bottom: 1px dotted grey;
+
+// background-color:black;
+`;
+const TopContainerone=styled.div`
+margin: 10px;
+background-color:red;
+width:20%;
+height:40%;
+background-color:#c9caee;
+`;
+const TopContainertwo=styled.div`
+margin: 10px;
+backgrobackground-und-color:red;
+width:20%;
+height:40%;
+color:#f0c8cf;
+`;
+const TopContainerfour=styled.div`
+margin: 10px;
+background-color:red;
+width:20%;
+border-radius:6px;
+`;
+const TopContainerfive=styled.div`
+margin: 10px;
+background-color:red;
+width:20%;
+height:40%;
+background-color:#f0c8cf;
+border-radius:6px;
+
+`;
+const TopContainersix=styled.div`
+margin: 10px;
+background-color:red;
+width:20%;
+height:40%;
+background-color:#f0c8cf;
+border-radius:6px;
+
+`;
+const TopContainersvn=styled.div`
+margin: 10px;
+background-color:red;
+width:20%;
+height:40%;
+background-color:#f0c8cf;
+border-radius:6px;
+
+`;
+const TopContaineregt=styled.div`
+margin: 10px;
+background-color:red;
+width:20%;
+height:40%;
+background-color:#f0c8cf;
+`;
+const TopContainerthree=styled.div`
+margin: 10px;
+background-color:red;
+width:20%;
+height:40%;
+background-color:#f0c8cf;
+`;
+const ImageSection=styled.div`
+width:23%;
+margin-bottom:20px;
+
+`;
+const Image1=styled.img`
+// dispy:block;
+// width:100%;
+`;
+const Content =styled.div``;
+const Title = styled.small`
+font-size:17px;
+`;
+const Number=styled.p`
+// font-size:10px;
+margin-bottom:20px;
+`;
+const SectionBottom=styled.div`
+position:absolute`;
+const ProcessingOrders=styled.div``;
+const MainSet=styled.div``;
+const H1=styled.h1``;
+const Arrow=styled.div``;
+const ArrowIcon=styled.img``;
+const ItemPrice=styled.div``;
+const HeadingTags=styled.div``;
+const DollerRate=styled.div``;
+const MainButton=styled.div``;
+const IconImage=styled.div`
+
+`;
+const Minus=styled.img``;
+const SubItem=styled.div``;
+const Plus=styled.img``;
 
 
   
