@@ -413,7 +413,49 @@ const [subtotal,setSubtotal]=useState(0);
                         </ProcessingOrders>
                  
                     </SectionBottom> 
- 
+                     <Footer>
+                          <Orderdering1>
+                              <Code>T4</Code>
+                          </Orderdering1>
+                          <Orderdering2>
+                            <Nameing>Lesliya</Nameing>
+                            <ContentItem>6 Items</ContentItem>
+                            <RightArrow>
+                                <Arros src={require("../../Asset/images/Arrow.svg").default } /> 
+                                
+                            </RightArrow>
+                            <SettingContent>Kitchen</SettingContent>
+
+                          </Orderdering2>
+                          <Orderdering1>
+                              <Code>T2</Code>
+                          </Orderdering1>
+                          <Orderdering2>
+                            <Nameing>Lesliya</Nameing>
+                            <ContentItem>6 Items</ContentItem>
+                            <RightArrow>
+                                <Arros src={require("../../Asset/images/Arrow.svg").default } /> 
+                                
+                            </RightArrow>
+                            <SettingContent>Kitchen</SettingContent>
+                            <LastButton>In Process</LastButton>
+
+                          </Orderdering2>
+                          <Orderdering1>
+                              <Code>T4</Code>
+                          </Orderdering1>
+                          <Orderdering2>
+                            <Nameing>Lesliya</Nameing>
+                            <ContentItem>6 Items</ContentItem>
+                            <RightArrow>
+                                <Arros src={require("../../Asset/images/Arrow.svg").default } /> 
+                                
+                            </RightArrow>
+                            <SettingContent>Kitchen</SettingContent>
+                            <LastButton>In Process</LastButton>
+
+                          </Orderdering2>
+                     </Footer>
        </MainContainer>
 
     )
@@ -619,6 +661,8 @@ const MenuContainer=styled.div`
     justify-content: center;
     // width:40%;
     // height:30%;
+    width:93%;
+    margin: 44px;
     
     
     `;
