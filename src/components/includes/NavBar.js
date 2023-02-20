@@ -110,12 +110,13 @@ import styled from "styled-components";
                             
                               <PaymentOption>
                                  <Methods>
-                                     <Method><Method className="one">Cash</Method>
-                                        <Cash src={require("../../Asset/images/Dollar.svg").default} /></Method>
-                                     <Method className="two">DebitCard</Method>
-                                         <DebitCard src={require("../../Asset/images/Credit.svg").default} />
+                                     <Cash src={require("../../Asset/images/Dollar.svg").default} />
+                                       <Method className="one">Cash</Method>
+                                    <DebitCard src={require("../../Asset/images/Credit.svg").default} /> 
+                                       <Method className="two">DebitCard</Method>
+                                       <Wallet src={require("../../Asset/images/Scan.svg").default}  />
                                      <Method className="three">E-wallet</Method>
-                                        <Wallet src={require("../../Asset/images/Scan.svg").default}  />
+                                        
                                  </Methods>
                               </PaymentOption>
                                     <Button>
@@ -345,7 +346,7 @@ import styled from "styled-components";
                               <H1>Kitchen</H1>
                            </MainSet>
                             <ItemPrice> 
-                               <HeadingTags>BUFFALO Wings</HeadingTags>
+                               <HeadingTags>Bufallo Wings</HeadingTags>
                                <DollerRate>$7.50</DollerRate>
                            </ItemPrice>
                            <MainButton>
@@ -709,7 +710,7 @@ const Method=styled.div`
 display:flex;
 justify-content:space-between;`;
 const Methods=styled.div`
-display:flex;
+flex-direction: column;
 justify-content:space-eventy;
 border:1px solid #000;
 width:90%;
@@ -720,10 +721,31 @@ font-size: 13px;
 `;
 const Cash=styled.img`
 font-size: 13px;
+padding: 10px 29px;
+ font-size: 13px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  filter: invert(1);
+  cursor: pointer;
+  &:hover {
+    filter: invert(0);
+    background-color: #fff;
+    color: white;
+  }
 `;
 const DebitCard=styled.img`
-width: 30%;
 text-align: center;
+padding: 10px 29px;
+ font-size: 13px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  filter: invert(1);
+  cursor: pointer;
+  &:hover {
+    filter: invert(0);
+    background-color: #fff;
+    color: white;
+  }
 `;
 const Wallet=styled.img`
   padding: 10px 29px;
@@ -849,22 +871,30 @@ left: 200px;
 const ProcessingOrders=styled.div`
 padding: 10px;
 width: 150px;
+border: 30px;
+background-color: #000;
+color: #fff;
 `;
 const MainSet=styled.div`
   display: flex;
   align-items: center;
+  /* color: #fff; */
+  width: 18%;
 `;
 const H1=styled.h1`
   font-size: 14px;
 `;
-const Arrow=styled.div``;
-const ArrowIcon=styled.img``;
+const Arrow=styled.div`
+`;
+const ArrowIcon=styled.img`
+`;
 const ItemPrice=styled.div``;
 const HeadingTags=styled.div`
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
 `;
-const DollerRate=styled.div``;
+const DollerRate=styled.div`
+font-size:13px`;
 const MainButton=styled.div`
   display: flex;
   justify-content: flex-end;
@@ -872,12 +902,31 @@ const MainButton=styled.div`
 const IconImage=styled.div`
 display: flex;
 justify-content: space-between;
-width: 40%;
+width: 82%;
 
 `;
-const Minus=styled.img``;
+const Minus=styled.img`
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border: 1px solid #8e8e8e;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  width: 30px;
+  padding: 5px;`;
 const SubItem=styled.div``;
-const Plus=styled.img``;
+const Plus=styled.img`
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border: 1px solid #8e8e8e;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  width: 30px;
+  padding: 5px;
+  cursor: pointer;`;
 
 
   
