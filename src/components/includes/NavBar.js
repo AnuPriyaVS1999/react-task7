@@ -1,7 +1,17 @@
-import React from 'react';
+import React,{useState} from 'react';
 import styled from "styled-components";
 
  export default function NavBar() {
+const [fish,setFish]=useState(0);
+const [chicken,setChicken]=useState(0);
+const [filler,setFiller]=useState(0);
+const [beef,setBeef]=useState(0);
+const [rbeef,setBroast]=useState(0);
+const [bufallo,setBufallo]=useState(0);
+const [lobstar,setLobstar]=useState(0);
+const [redc,setRedc]=useState(0);
+const [subtotal,setSubtotal]=useState(0);
+
     return(
         <MainContainer>
 
@@ -91,17 +101,17 @@ import styled from "styled-components";
                         <TopSection>
                             <SubTotal>
                                 <SubTitle>Subtotal</SubTitle>
-                                <SubPrice>$171.50</SubPrice>
+                                <SubPrice>{(beef + rbeef + fish + chicken + filler +lobstar + redc + bufallo )* 7.5}</SubPrice>
                             </SubTotal>
                             <Tax>
                                 <TaxTitle>Tax 10%</TaxTitle>
-                                <TaxPrice>$17.15</TaxPrice>
+                                <TaxPrice>${((beef + rbeef + fish + chicken + filler +lobstar + redc + bufallo )* 7.5)* 0.1}</TaxPrice>
                            </Tax>
                            <Line />
                            
                             <Total>
                                <TotalTitle>Total</TotalTitle>
-                               <TotalPrice>$188.65</TotalPrice>
+                               <TotalPrice>${((beef + rbeef + fish + chicken + filler +lobstar + redc + bufallo )* 7.5)+(((beef + rbeef + fish + chicken + filler +lobstar + redc + bufallo )* 7.5)* 0.1)}</TotalPrice>
                             </Total>
                         </TopSection>
                     
@@ -110,13 +120,12 @@ import styled from "styled-components";
                             
                               <PaymentOption>
                                  <Methods>
-                                     <Cash src={require("../../Asset/images/Dollar.svg").default} />
-                                       <Method className="one">Cash</Method>
-                                    <DebitCard src={require("../../Asset/images/Credit.svg").default} /> 
-                                       <Method className="two">DebitCard</Method>
-                                       <Wallet src={require("../../Asset/images/Scan.svg").default}  />
+                                     <Method><Method className="one">Cash</Method>
+                                        <Cash src={require("../../Asset/images/Dollar.svg").default} /></Method>
+                                     <Method className="two">DebitCard</Method>
+                                         <DebitCard src={require("../../Asset/images/Credit.svg").default} />
                                      <Method className="three">E-wallet</Method>
-                                        
+                                        <Wallet src={require("../../Asset/images/Scan.svg").default}  />
                                  </Methods>
                               </PaymentOption>
                                     <Button>
@@ -246,9 +255,9 @@ import styled from "styled-components";
                            </ItemPrice>
                            <MainButton>
                                 <IconImage>
-                                    <Minus src={require("../../Asset/images/minus.svg").default } />
-                                    <SubItem>0</SubItem>
-                                    <Plus src={require("../../Asset/images/plus.svg").default } />
+                                    <Minus onClick={()=>setFish(fish - 1)} src={require("../../Asset/images/minus.svg").default } />
+                                    <SubItem>{fish}</SubItem>
+                                    <Plus onClick={()=>setFish(fish + 1)} src={require("../../Asset/images/plus.svg").default } />
                                 </IconImage>
                            </MainButton>
                               
@@ -267,9 +276,9 @@ import styled from "styled-components";
                            </ItemPrice>
                            <MainButton>
                                 <IconImage>
-                                    <Minus src={require("../../Asset/images/minus.svg").default } />
-                                    <SubItem>2</SubItem>
-                                    <Plus src={require("../../Asset/images/plus.svg").default } />
+                                    <Minus onClick={()=>setChicken(chicken - 1)} src={require("../../Asset/images/minus.svg").default } />
+                                    <SubItem>{chicken}</SubItem>
+                                    <Plus onClick={()=>setChicken(chicken + 1)} src={require("../../Asset/images/plus.svg").default } />
                                 </IconImage>
                            </MainButton>
                               
@@ -288,9 +297,9 @@ import styled from "styled-components";
                            </ItemPrice>
                            <MainButton>
                                 <IconImage>
-                                    <Minus src={require("../../Asset/images/minus.svg").default } />
-                                    <SubItem>0</SubItem>
-                                    <Plus src={require("../../Asset/images/plus.svg").default } />
+                                    <Minus onClick={()=>setFiller(filler - 1)} src={require("../../Asset/images/minus.svg").default } />
+                                    <SubItem>{filler}</SubItem>
+                                    <Plus onClick={()=>setFiller(filler + 1)} src={require("../../Asset/images/plus.svg").default } />
                                 </IconImage>
                            </MainButton>
                               
@@ -309,9 +318,9 @@ import styled from "styled-components";
                            </ItemPrice>
                            <MainButton>
                                 <IconImage>
-                                    <Minus src={require("../../Asset/images/minus.svg").default } />
-                                    <SubItem>0</SubItem>
-                                    <Plus src={require("../../Asset/images/plus.svg").default } />
+                                    <Minus onClick={()=>setBeef(beef - 1)} src={require("../../Asset/images/minus.svg").default } />
+                                    <SubItem>{beef}</SubItem>
+                                    <Plus onClick={()=>setBeef(beef + 1)} src={require("../../Asset/images/plus.svg").default } />
                                 </IconImage>
                            </MainButton>
                               
@@ -330,9 +339,9 @@ import styled from "styled-components";
                            </ItemPrice>
                            <MainButton>
                                 <IconImage>
-                                    <Minus src={require("../../Asset/images/minus.svg").default } />
-                                    <SubItem>0</SubItem>s
-                                    <Plus src={require("../../Asset/images/plus.svg").default } />
+                                    <Minus onClick={()=>setBroast(rbeef - 1)} src={require("../../Asset/images/minus.svg").default } />
+                                    <SubItem>{rbeef}</SubItem>s
+                                    <Plus onClick={()=>setBroast(rbeef + 1)} src={require("../../Asset/images/plus.svg").default } />
                                 </IconImage>
                            </MainButton>
                               
@@ -351,9 +360,9 @@ import styled from "styled-components";
                            </ItemPrice>
                            <MainButton>
                                 <IconImage>
-                                    <Minus src={require("../../Asset/images/minus.svg").default } />
-                                    <SubItem>0</SubItem>
-                                    <Plus src={require("../../Asset/images/plus.svg").default } />
+                                    <Minus onClick={()=>setBufallo(bufallo - 1)} src={require("../../Asset/images/minus.svg").default } />
+                                    <SubItem>{bufallo}</SubItem>
+                                    <Plus onClick={()=>setBufallo(bufallo + 1)} src={require("../../Asset/images/plus.svg").default } />
                                 </IconImage>
                            </MainButton>
                               
@@ -372,9 +381,9 @@ import styled from "styled-components";
                            </ItemPrice>
                            <MainButton>
                                 <IconImage>
-                                    <Minus src={require("../../Asset/images/minus.svg").default } />
-                                    <SubItem>0</SubItem>
-                                    <Plus src={require("../../Asset/images/plus.svg").default } />
+                                    <Minus onClick={()=>setLobstar(lobstar - 1)} src={require("../../Asset/images/minus.svg").default } />
+                                    <SubItem>{lobstar}</SubItem>
+                                    <Plus onClick={()=>setLobstar(lobstar + 1)} src={require("../../Asset/images/plus.svg").default } />
                                 </IconImage>
                            </MainButton>
 
@@ -394,9 +403,9 @@ import styled from "styled-components";
                            </ItemPrice>
                            <MainButton>
                                 <IconImage>
-                                    <Minus src={require("../../Asset/images/minus.svg").default } />
-                                    <SubItem>0</SubItem>
-                                    <Plus src={require("../../Asset/images/plus.svg").default } />
+                                    <Minus onClick={()=>setRedc(redc - 1)} src={require("../../Asset/images/minus.svg").default } />
+                                    <SubItem>{redc}</SubItem>
+                                    <Plus onClick={()=>setRedc(redc + 1)} src={require("../../Asset/images/plus.svg").default } />
                                 </IconImage>
                            </MainButton>
                            
@@ -710,7 +719,8 @@ const Method=styled.div`
 display:flex;
 justify-content:space-between;`;
 const Methods=styled.div`
-flex-direction: column;
+
+f
 justify-content:space-eventy;
 border:1px solid #000;
 width:90%;
@@ -871,6 +881,7 @@ left: 200px;
 const ProcessingOrders=styled.div`
 padding: 10px;
 width: 150px;
+margin-top: 10px;
 border: 30px;
 background-color: #000;
 color: #fff;
@@ -906,8 +917,8 @@ width: 82%;
 
 `;
 const Minus=styled.img`
-  width: 100%;
-  height: 100%;
+  
+  height:73%;
   border-radius: 4px;
   border: 1px solid #8e8e8e;
   margin-left: 10px;
@@ -917,8 +928,7 @@ const Minus=styled.img`
   padding: 5px;`;
 const SubItem=styled.div``;
 const Plus=styled.img`
-  width: 100%;
-  height: 100%;
+  height: 73%;
   border-radius: 4px;
   border: 1px solid #8e8e8e;
   margin-left: 10px;
