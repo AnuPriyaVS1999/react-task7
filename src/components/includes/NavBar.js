@@ -642,8 +642,7 @@ margin-top:30px;
 padding:15px;`;
  
 const TopSection = styled.div`
-margin-bottom:60px;
-font-weight:`;
+margin-bottom:60px;`;
 
  
 const SubTotal= styled.div`
@@ -750,12 +749,13 @@ const Button=styled.div`
   `;
 const MiddleSection=styled.div`
 position:absolute;
-top: 83px;
-left: 201px;
+top: 95px;
+left: 150px;
 display:flex;
 flex-wrap:wrap;
-width:60%;
+width:65%;
 border-bottom: 1px dotted grey;
+justify-content: space-evenly;
 
 // background-color:black;
 `;
@@ -768,7 +768,7 @@ background-color:#c9caee;
 `;
 const TopContainertwo=styled.div`
 margin: 10px;
-backgrobackground-und-color:red;
+background-color:red;
 width:20%;
 height:40%;
 color:#f0c8cf;
@@ -838,17 +838,41 @@ const Number=styled.p`
 margin-bottom:20px;
 `;
 const SectionBottom=styled.div`
-position:absolute`;
-const ProcessingOrders=styled.div``;
-const MainSet=styled.div``;
-const H1=styled.h1``;
+display: flex;
+flex-wrap: wrap;
+width: 60%;
+justify-content: space-between;
+position: absolute;
+top: 400px;
+left: 200px;
+`;
+const ProcessingOrders=styled.div`
+padding: 10px;
+width: 150px;
+`;
+const MainSet=styled.div`
+  display: flex;
+  align-items: center;
+`;
+const H1=styled.h1`
+  font-size: 14px;
+`;
 const Arrow=styled.div``;
 const ArrowIcon=styled.img``;
 const ItemPrice=styled.div``;
-const HeadingTags=styled.div``;
+const HeadingTags=styled.div`
+  font-size: 20px;
+  font-weight: bold;
+`;
 const DollerRate=styled.div``;
-const MainButton=styled.div``;
+const MainButton=styled.div`
+  display: flex;
+  justify-content: flex-end;
+`;
 const IconImage=styled.div`
+display: flex;
+justify-content: space-between;
+width: 40%;
 
 `;
 const Minus=styled.img``;
