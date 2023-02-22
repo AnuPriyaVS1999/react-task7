@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-export default function Accounting() {
+ function Accounting() {
   return (
     <div>
         <h1>COMMINGSOON</h1>
@@ -8,3 +8,4 @@ export default function Accounting() {
     </div>
   )
 }
+export default Accounting;

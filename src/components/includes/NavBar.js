@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const [fish, setFish] = useState(0);
@@ -39,11 +40,11 @@ export default function NavBar() {
 
       <LeftContainer>
         <ListContainer>
-          <ListItemsLink>Reservation</ListItemsLink>
-          <ListItemsLink>Table Services</ListItemsLink>
-          <ListItemsLink>Menu</ListItemsLink>
-          <ListItemsLink>Delivery</ListItemsLink>
-          <ListItemsLink>Accounting</ListItemsLink>
+      <Div> <ListItemsLink to="/commingsoon">Reservation</ListItemsLink></Div> 
+      <Div> <ListItemsLink to="/commingsoon">Table Services</ListItemsLink></Div> 
+      <Div> <ListItemsLink to="/">Menu</ListItemsLink></Div> 
+      <Div> <ListItemsLink to="/commingsoon">Delivery</ListItemsLink></Div> 
+      <Div> <ListItemsLink to="/commingsoon">Accounting</ListItemsLink></Div> 
         </ListContainer>
         <MiddleContainer>
           <User>
@@ -681,7 +682,7 @@ const ListContainer = styled.div`
     background: #2d2d2d;
   }
 `;
-const ListItemsLink = styled.div`
+const ListItemsLink = styled(Link)`
   color: #a6a6a6;
   font-size: 15px;
 
@@ -1137,6 +1138,7 @@ const Nameing = styled.h4`
   color: white;
 `;
 const ContentItem = styled.div``;
+const Div = styled.div``;
 const RightArrow = styled.div``;
 const Arros = styled.img``;
 const SettingContent = styled.div``;
