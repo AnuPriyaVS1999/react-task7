@@ -522,7 +522,7 @@ export default function NavBar() {
             <All>
               <ContentItem>6 Items</ContentItem>
               <RightArrow>
-                <Arros src={require("../../Asset/images/Arrow.svg").default} />
+                <Arros  />
               </RightArrow>
               <SettingContent>Kitchen</SettingContent>
             </All>
@@ -537,7 +537,7 @@ export default function NavBar() {
             <All>
               <ContentItem>6 Items</ContentItem>
               <RightArrow>
-                <Arros src={require("../../Asset/images/Arrow.svg").default} />
+                <Arros />
               </RightArrow>
               <SettingContent>Kitchen</SettingContent>
             </All>
@@ -557,7 +557,7 @@ export default function NavBar() {
             <All>
               <ContentItem>6 Items</ContentItem>
               <RightArrow>
-                <Arros src={require("../../Asset/images/Arrow.svg").default} />
+                <Arros  />
               </RightArrow>
               <SettingContent>Kitchen</SettingContent>
             </All>
@@ -698,6 +698,7 @@ const ListItemsLink = styled(Link)`
 
   margin-left: 20px;
   padding: 15px;
+  text-decoration:none;
 `;
 const MiddleContainer = styled.div`
   width: 80%;
@@ -705,7 +706,7 @@ const MiddleContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  margin-top: 245px;
+  margin-top: 200px;
 `;
 const User = styled.div`
   width: 82%;
@@ -827,9 +828,9 @@ const SubTotal = styled.div`
   font-size: 15px;
 `;
 const SubTitle = styled.div`
-  color: #a6a6a6;
+  
   font-weight: 500;
-  font-size: 17px;
+  font-size: 10px;
 `;
 const SubPrice = styled.div`
   margin-right: 27px;
@@ -1073,7 +1074,7 @@ const MainSet = styled.div`
   width: 18%;
 `;
 const H1 = styled.h1`
-  font-size: 14px;
+  font-size: 10px;
 `;
 const Arrow = styled.div``;
 const ArrowIcon = styled.img``;
@@ -1136,6 +1137,7 @@ const Oder = styled.div`
   &:nth-child(2){
     border-right: 1px solid white;
     border-left: 1px solid white;
+    width:35%;
   }
 `;
 const Rightoder = styled.div``;
@@ -1153,19 +1155,29 @@ const All = styled.div`
 const Nameing = styled.h4`
   color: white;
 `;
-const ContentItem = styled.div``;
-const Div = styled.div``;
+const ContentItem = styled.div`
+font-size:10px;
+`;
+const Div = styled.div`
+margin-bottom:45px;`;
 const RightArrow = styled.div``;
 const Arros = styled.img``;
-const SettingContent = styled.div``;
+const SettingContent = styled.div`
+font-size:10px;
+margin-left:10px;
+
+`;
 const ButtonBox = styled.div`
     .second{
-        margin-top: 40px;
+        margin-top: 35px;
+        font-size:10px;
     }
 `;
 const ButtonGreen = styled.button`
    background: #c3e9de;
-    padding: 5px;
+    padding: 2px;
     border-radius: 8px;
+    margin-bottam:15px;
+    font-size: 10px;
 
 `;
