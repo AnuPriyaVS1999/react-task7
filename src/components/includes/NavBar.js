@@ -41,8 +41,8 @@ export default function NavBar() {
       <LeftContainer>
         <ListContainer>
       <Div> <ListItemsLink to="/commingsoon">Reservation</ListItemsLink></Div> 
-      <Div> <ListItemsLink to="/commingsoon">Table Services</ListItemsLink></Div> 
-      <Div> <ListItemsLink to="/">Menu</ListItemsLink></Div> 
+      <Div> <ListItemsLink to="/commingsoon">Menu</ListItemsLink></Div> 
+      <Div> <ListItemsLink to="/navbar">Table services</ListItemsLink></Div> 
       <Div> <ListItemsLink to="/commingsoon">Delivery</ListItemsLink></Div> 
       <Div> <ListItemsLink to="/commingsoon">Accounting</ListItemsLink></Div> 
         </ListContainer>
@@ -316,7 +316,7 @@ export default function NavBar() {
             </IconImage>
           </MainButton>
         </ProcessingOrders>
-        <ProcessingOrders>
+        <ProcessingOrders className="pink">
           <MainSet>
             <H1>Orders</H1>
             <Arrow>
@@ -484,7 +484,7 @@ export default function NavBar() {
             </IconImage>
           </MainButton>
         </ProcessingOrders>
-        <ProcessingOrders>
+        <ProcessingOrders className="pink">
           <MainSet>
             <H1>Orders</H1>
             <Arrow>
@@ -530,7 +530,7 @@ export default function NavBar() {
         </Oder>
         <Oder>
           <LeftOrderdering1>
-            <Code>T4</Code>
+            <Code>T2</Code>
           </LeftOrderdering1>
           <Rightoder>
             <Nameing>Lesliya</Nameing>
@@ -542,6 +542,11 @@ export default function NavBar() {
               <SettingContent>Kitchen</SettingContent>
             </All>
           </Rightoder>
+          <ButtonBox>
+            <ButtonGreen>
+                in processing
+            </ButtonGreen>
+          </ButtonBox>
         </Oder>
         <Oder>
           <LeftOrderdering1>
@@ -558,6 +563,11 @@ export default function NavBar() {
             </All>
           </Rightoder>
         </Oder>
+        <ButtonBox>
+            <ButtonGreen className="second">
+                in processing
+            </ButtonGreen>
+          </ButtonBox>
       </Footer>
       </SectionBottom>
      
@@ -1041,6 +1051,10 @@ const SectionBottom = styled.div`
   position: absolute;
   top: 456px;
   left: 197px;
+  .pink{
+    background-color: #f9c2d9;
+  }
+  
 `;
 const ProcessingOrders = styled.div`
   padding: 10px;
@@ -1049,6 +1063,8 @@ const ProcessingOrders = styled.div`
   border: 30px;
   background-color: #2d2d2d;
   color: #fff;
+  border-left: 8px solid  #f9c2d9;
+ 
 `;
 const MainSet = styled.div`
   display: flex;
@@ -1142,4 +1158,14 @@ const Div = styled.div``;
 const RightArrow = styled.div``;
 const Arros = styled.img``;
 const SettingContent = styled.div``;
-const LastButton = styled.div``;
+const ButtonBox = styled.div`
+    .second{
+        margin-top: 40px;
+    }
+`;
+const ButtonGreen = styled.button`
+   background: #c3e9de;
+    padding: 5px;
+    border-radius: 8px;
+
+`;

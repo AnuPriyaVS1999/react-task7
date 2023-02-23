@@ -12,6 +12,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<NavBar/>}/>
+        <Route path="/navbar" element={<NavBar/>}/>
         <Route path="/commingsoon" element={<Delivery/>}/>
        
       </Routes>

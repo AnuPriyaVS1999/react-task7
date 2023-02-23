@@ -40,11 +40,11 @@ export default function NavBar() {
 
       <LeftContainer>
         <ListContainer>
-        <Div> <ListItemsLink to="/commingsoon">Reservation</ListItemsLink></Div> 
-      <Div> <ListItemsLink to="/commingsoon">Table Services</ListItemsLink></Div> 
-      <Div> <ListItemsLink to="/">Menu</ListItemsLink></Div> 
-      <Div> <ListItemsLink to="/commingsoon">Delivery</ListItemsLink></Div> 
-      <Div> <ListItemsLink to="/commingsoon">Accounting</ListItemsLink></Div>
+          <Div> <ListItemsLink to="/commingsoon">Reservation</ListItemsLink></Div> 
+          <Div> <ListItemsLink to="/commingsoon">Menu</ListItemsLink></Div> 
+          <Div> <ListItemsLink to="/">Table Services</ListItemsLink></Div> 
+          <Div> <ListItemsLink to="/commingsoon">Delivery</ListItemsLink></Div> 
+          <Div> <ListItemsLink to="/commingsoon">Accounting</ListItemsLink></Div>
         </ListContainer>
         <MiddleContainer>
           <User>
